@@ -1,0 +1,60 @@
+function soma(a, b){
+	return a + b;
+}
+function subtracao(a, b){
+	return a - b;
+}
+function multiplicacao(a, b){
+	return a * b;
+}
+function divisao(a, b){
+	return b!== 0 ? a / b: "Não é possível dividir por zero";
+}
+
+function verificarNumero(valor){
+	return !isNaN(valor) && valor !== null;
+}
+
+let operacao = prompt(`olá, Digite uma das seguintes operações: 
++ ; 
+- ; 
+* ; 
+/ ;
+Sair;`).toLowerCase();
+
+while(operacao !== "sair"){
+let res;
+let n1 = parseInt(prompt("Informe o primeiro número:"),10);
+let n2 = parseInt(prompt("Informe o segundo número:"),10);
+
+if (verificarNumero(n1) && verificarNumero(n2)){
+	switch (operacao){
+		case "+":
+			res = soma(n1, n2);
+			break;
+		case "-":
+			res = subtracao(n1, n2);
+			break;
+		case "*":
+			res = multiplicacao(n1, n2);
+			break;
+		case "/":
+			res = divisao(n1, n2);
+			break;
+		default:
+			res = "operação inválida";
+ 	}
+	alert(`O resultado é: ${res}`);
+}else{
+		alert("Por favor, informe números Válidos.");
+}
+
+
+operacao = prompt(`olá, Digite uma das seguintes operações: 
++ ; 
+- ; 
+* ; 
+/ ;
+Sair;`).toLowerCase();
+}
+alert("Até a próxima");
