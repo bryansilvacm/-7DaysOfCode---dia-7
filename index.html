@@ -3,10 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="C:\Users\Caixa\Downloads\here\calculadora js\script.js.txt"></script>  
+ <script src="C:\Users\Caixa\Downloads\here\calculadora js\script.js.txt"></script> 
 <title>Exemplo Responsivo</title>
+
+<style>
+body{
+	background-color:#333;
+	height:100%;
+}
+section{
+	margin:auto;
+	border:2px solid;
+	width:20%;
+	height:30rem;
+	background-color:white;
+	display:flex;	
+	flex-wrap: wrap;
+	border-radius:1rem;	
+	
+}
+#visor{
+	margin:7rem auto 0 auto ;
+	width:20%;
+	height:3rem;
+	
+	
+}
+div{
+	margin:auto;
+	width:22%;
+	height:6rem;
+	text-align:center;
+	border:3px solid black;
+	border-radius:1rem;
+	transition: width 0.5s;
+	background-color:#313;
+	color:white;
+	font-size:2rem;
+	
+	
+}
+#apagar{
+	font-size:1.5rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+div:hover{
+	background-color:#323;
+}
+div:active{
+	background-color:#333;
+}
+</style>
+
 </head>
 <body>
+<section id="visor"></section>
+<section>
+
+<div><p>7</p></div>
+<div><p>8</p></div>
+<div><p>9</p></div>
+<div id="apagar"><p>apagar</p></div>
+<div><p>4</p></div>
+<div><p>5</p></div>
+<div><p>6</p></div>
+<div><p>*</p></div>
+<div><p>1</p></div>
+<div><p>2</p></div>
+<div><p>3</p></div>
+<div><p>/</p></div>
+<div><p>+</p></div>
+<div><p>0</p></div>
+<div><p>-</p></div>
+<div><p>=</p></div>
+</section>
 
 </body>
 </html>
